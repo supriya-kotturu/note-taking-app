@@ -34,9 +34,9 @@ cd collaborative-notes
 # Install client dependencies
 npm install
 
-# Install server dependencies
-cd server
-npm install
+
+
+
 ```
 
 3. Set up environment variables
@@ -44,11 +44,11 @@ npm install
 Create a `.env` file in the root directory with the following variables:
 
 ```env
-DATABASE_URL="postgresql://user:password@localhost:5432/collaborative_notes"
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=""
-CLERK_SECRET_KEY=""
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+DATABASE_URL='postgresql://neondb_owner:npg_t0dvhBUsuDn8@ep-steep-scene-a1y7q7ns-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require'
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_cHVyZS1nb2JibGVyLTIwLmNsZXJrLmFjY291bnRzLmRldiQ
+CLERK_SECRET_KEY=sk_test_8I5onqyPuTMe9nwVVZdd5scl54sdwbAnA9QAsUopPU
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/signin
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/signup
 NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/notes
 NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/notes
 NEXT_PUBLIC_SOCKET_URL=http://localhost:3001
@@ -61,20 +61,24 @@ npx prisma generate
 npx prisma db push
 ```
 
+or 
+
+```bash
+npx prisma migrate dev --name init
+```
+
 5. Start the development servers
 
 ```bash
 # Start the client
 npm run dev
-
-# Start the server (in a new terminal)
-cd server
-npm run dev
 ```
 
 6. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Demo Credentials
+## Demo Credentials 
+
+use any google account
 
 - Email: demo@example.com
 - Password: demo123
@@ -84,8 +88,8 @@ npm run dev
 The application can be deployed using the following services:
 
 - Frontend: Vercel
-- Backend: Railway or Heroku
-- Database: Railway PostgreSQL or Heroku Postgres
+- Backend: Neondb
+- Database: Neondb PostgreSQL
 
 ## Environment Setup
 
@@ -94,7 +98,7 @@ The application can be deployed using the following services:
    - Connect your GitHub repository
    - Deploy
 
-2. Backend (Railway)
+2. Backend (Neondb)
    - Create a new project
    - Add PostgreSQL addon
    - Set up environment variables
