@@ -20,8 +20,8 @@ If you're seeing a 404 error when trying to sign in:
    # Required: URL configuration
    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/signin
    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/signup
-   NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/notes
-   NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/notes
+   NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL=/notes
+   NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL=/notes
    ```
 
 2. **Clear Cache and Restart**

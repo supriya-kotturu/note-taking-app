@@ -20,8 +20,8 @@ Follow these steps **exactly** in order:
    CLERK_SECRET_KEY=your_key_here
    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/signin
    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/signup
-   NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/notes
-   NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/notes
+   NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL=/notes
+   NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL=/notes
    ```
 
 4. **Clear Browser Cache**

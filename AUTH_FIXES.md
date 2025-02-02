@@ -24,8 +24,8 @@ If you're seeing a 404 error with `/sign-in` redirects, follow these steps in or
    CLERK_SECRET_KEY=your_key
    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/signin
    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/signup
-   NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/notes
-   NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/notes
+   NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL=/notes
+   NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL=/notes
    ```
 
 4. **Reinstall and Restart**

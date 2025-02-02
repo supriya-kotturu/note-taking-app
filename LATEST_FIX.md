@@ -29,8 +29,8 @@ Follow these steps in exact order:
    # These exact URLs are required
    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/signin
    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/signup
-   NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/notes
-   NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/notes
+   NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL=/notes
+   NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL=/notes
    ```
 
 4. **Fresh Install**

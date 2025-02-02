@@ -16,8 +16,8 @@ if (!requiredEnvVars.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || !requiredEnvVars.CLERK
 Object.entries({
   NEXT_PUBLIC_CLERK_SIGN_IN_URL: '/signin',
   NEXT_PUBLIC_CLERK_SIGN_UP_URL: '/signup',
-  NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL: '/notes',
-  NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL: '/notes'
+  NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL: '/notes',
+  NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL: '/notes'
 }).forEach(([key, value]) => {
   process.env[key] = value;
 });
